@@ -27,3 +27,4 @@ You have to make website like this
 1. Pull this repo https://github.com/thminhVN/frontend-assignment to your machine
 2. Create new branch with this convension: **feature/your-fullname**. Example: *feature/tran-huu-minh*
 3. Create Pull Request (please field all information base on PR template) and request me review
+4. Please create `index.html` in root folder to help us can run CI-CD
