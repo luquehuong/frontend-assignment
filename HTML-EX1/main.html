@@ -1,0 +1,264 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+<title>Exercise 1</title>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+	width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+   }
+.white {
+	color:white;
+}
+.transwhite {
+  color:rgba(255, 255, 255, 0.7);    
+}
+.black {
+	color:black;
+}
+.orange {
+	color:#F05F40;
+}
+
+.block--one {
+	background-image: url("https://i.imgur.com/FXI0gmp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 20%;
+  }
+  .nav_bar {
+  position: fixed;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.7);
+ 	}
+  .block--one > h1 {
+	margin-top: 15%;
+    text-align:center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-right:40%;
+  }
+  hr {
+    border-width: 2px;
+    border-style: solid;
+    max-width: 50px;
+    margin: 30px auto;
+    display: block;
+  }
+  .block--one > p {
+    font-size: 18px;
+    max-width: 80%;
+    text-align:center;
+    margin-left:10%;
+    line-height: 1.5; 
+    margin-bottom: 7%;
+  }
+  .title_large 
+  {
+  	margin-top:25%;
+  }
+  button {
+    display: inline-block;
+    padding: 15px 0px;
+    font-size: 16px;
+    width: 27%;
+    line-height: 1.42857143;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ee4b28;
+    border: none;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: block;
+    max-width:200px;
+  }
+  .block--two {
+    background-color: #F05F40;
+    padding:5% 4%;
+  }
+  .block--two > h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .block--two > p {
+    font-size: 18px;
+    text-align:center;
+    margin-bottom: 30px;
+  }
+  .block--two > button {
+    background-color: #ffff; 
+    color: black;
+  }
+  
+  
+  .block--three > h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .flex-container-one {
+    display:flex;
+    padding: 5% 3%;
+  }
+  .flex-item {
+    text-align: center;
+   
+  }
+  .flex-item >i {
+    font-size: 64px;
+    margin-bottom: 15px;
+  }
+  .flex-item-two {
+    margin-top: -2%;
+  }
+  .flex-container-two {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    
+  } 
+  .block--five {
+    background-color: #222;
+    padding: 5%;
+    margin-top: -2%;
+  }
+  .block--five > h2 {
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  .block--six {
+    padding: 5%;
+  }
+  
+  .block--six > h2 {
+    text-align: center;
+  }
+  
+  .block--six > p {
+    text-align: center;
+  }
+  .flex-item-three {
+    text-align:center;
+  }
+  .flex-item-three > i {
+    font-size: 64px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+</style>
+</head>
+<body>
+	<section class="block--one">
+    	<div class="flex justify-between mb-4 px-4 pb-1 nav_bar fixed ">
+ 			<div class="w-1/3">
+				<a href="kenh14.vn"  class="transwhite"><h4>START BOOSTRAP</h4></a>
+     		</div>
+           	<div class="w-1/2">
+        <div class="flex">
+			<a href="kenh14.vn" class="transwhite"><h5>ABOUT</h5></a>
+    		<a href="kenh14.vn" class="transwhite"><h5>SERVICES</h5></a>
+    		<a href="kenh14.vn" class="transwhite"><h5>PORTFOLIO</h5></a>
+    		<a href="kenh14.vn" class="transwhite"><h5>CONTACT</h5></a>
+		</div>
+       </div>
+       </div>
+       <div class="w-5/6 content-center mx-auto title_large ">
+		<h1 class="white text-center">YOUR FAVORITE SOURCE OF FREE BOOSTRAP THEMES</h1>
+        </div>
+		<hr class="orange"/>
+        <div class="w-3/5 mx-auto mb-10 mt-1/3 ">
+		<p class="white text-center">Start Boostrap can help you build better website using 	the Boostrap CSS framework! Just download our template and start going, 	no strings attachted. </p>
+        </div>
+        <button class="w-64 h-10 hover:bg-orange-dark text-white font-bold py-2 px-2 rounded-full btn-orange">
+		FIND OUT MORE!</button>
+	</section>
+	<section class="block--two">
+    	<h2 class="white w-6/7" >We've got what you need</h2>
+        <hr class="white" />
+        <p class="white w-6/7">Start Boostrap has everything you need to get new website up and running no time!
+        All of the templates and themes on Start Boostrap are open source, free to download, and easy to use. No string attachted. </p>
+        <button class="w-64 h-10 hover:bg-orange-dark text-white font-bold py-2 px-2 rounded-full btn-white"><h5>GET STARTED!</h5></button> 
+    </section>
+    <section class="block--three py-10 pt-16 pb-24">
+		<h2 class="black"> At your service </h2>
+        <hr class="orange" />
+        <div class="flex flex-wrap px-10 ">
+  			<div class="flex-item w-full md:w-1/2 lg:w-1/4 mt-3 ">
+            	<i class="far fa-gem orange"></i>
+                <h2 class="black">Sturdy templates</h2>
+                <p class="grey">Our templates are updated regularly so they don't break </p>
+            </div>
+  			<div class="flex-item w-full md:w-1/2 lg:w-1/4 mt-3">
+            	<i class="fas fa-paper-plane orange"></i>
+                <h2 class="black">Ready to Ship</h2>
+                <p class="grey">You can use this theme as is, or you can make change</p>
+            </div>
+  			<div class="flex-item w-full md:w-1/2 lg:w-1/4 mt-3">
+            	<i class="far fa-newspaper orange"></i>
+				<h2 class="black">Up to Date</h2>
+                <p class="grey">We update dependencies to keep things fresh</p>
+			</div>
+  			<div class="flex-item w-full md:w-1/2 lg:w-1/4 mt-3">
+            	<i class="fas fa-heart orange"></i>
+            	<h2 class="black">Made with love</h2>
+                <p class="grey">You have made your website with love everyday</p>
+            </div>
+        </div>
+</section>
+  
+    <div class="block--four">
+    	<div class="flex flex-wrap">
+        	<div class="flex-item-two w-1/2 lg:w-1/3">
+            <img src="https://i.imgur.com/dn1QSBo.jpg" alt="pic1">
+            </div>
+            <div class="flex-item-two w-1/2 lg:w-1/3">
+            <img src="https://i.imgur.com/dn1QSBo.jpg" alt="pic1">
+            </div>
+            <div class="flex-item-two w-1/2 lg:w-1/3">
+            <img src="https://i.imgur.com/dn1QSBo.jpg" alt="pic1">
+            </div>
+            <div class="flex-item-two w-1/2 lg:w-1/3">
+            <img src="https://i.imgur.com/dn1QSBo.jpg" alt="pic1">
+            </div>
+            <div class="flex-item-two w-1/2 lg:w-1/3">
+            <img src="https://i.imgur.com/dn1QSBo.jpg" alt="pic1">
+            </div>
+            <div class="flex-item-two w-1/2 lg:w-1/3">
+            <img src="https://i.imgur.com/dn1QSBo.jpg" alt="pic1">
+            </div>
+    </div>
+    <div class="block--five">
+    	<h2 class="white"> Free Download at Start Boostrap! </h2>
+        <button class="w-64 h-10 hover:bg-orange-dark text-white font-bold pt-2 px-2 rounded-full btn-orange"><h5>DOWLOAD NOW!</h5></button> 
+    </div>
+    <div class="block--six">
+    	<h2 class="black"> Let's get in touch! </h2>
+        <hr class="orange" />
+        <p class="black">Ready to start next project with us? That's great! Give us a call or send us an email and we willget back to you as soon as possible!</p>
+        <div class="flex flex-wrap px-32 py-12">
+        	<div class="flex-item w-full md:w-1/2">
+            	<i class="fas fa-phone black"></i>
+                <p class="black">123-456-789</p>
+          </div>
+          	<div class="flex-item w-full md:w-1/2">
+            	<i class="far fa-envelope black"></i>
+                <a href="kenh14.vn"><p class="black">feedback@gmail.com</p></a>
+            </div>
+        </div>
+    </div>
+    	
+    
+</body>
