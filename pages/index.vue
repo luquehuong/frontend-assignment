@@ -1,11 +1,15 @@
 <template>
-    <div id="app" class="flex flex-wrap">
-        <div class="w-1/3 px-10 pt-5 list">
+    <div id="app" class="flex flex-wrap list">
+        <div class="w-1/4 list">
         <List 
             @chooseBeer="updateDetail"
-            :beers="beers"    
+            :beers="beers"
+            :listName="beers"    
         />
-        </div><div class="w-2/3">
+        </div><div class="w-3/4 detail">
+        <div class="top-detail w-full">
+
+        </div>
         <h2><nuxt-child :key="$route.params.id"/></h2>
         </div>
     </div>
@@ -46,10 +50,14 @@ export default {
 }
 </script>
 <style>
-*{
-    font-family: 'Arvo', serif;
-}   
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+.detail {
+    background-color: #F3F6E7;
+}
+.top-detail {
+    background-image: url('http://rushriverbeer.com/wp-content/uploads/2015/04/OurBrews_Hearder_V21.jpg');
+    height:20%;
+}
 </style>
 
     

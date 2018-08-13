@@ -1,12 +1,12 @@
 <template>
-    <div class="list_card">
+    <div class="list_card pl-5 pt-5">
         <div class="search_bar">
             <input id="search" type="text" placeholder="Search for name" v-model="textSearch" @keyup.enter="search" >
         </div>
         <div class="list_bar">
         <ul>
-        <li v-for="beer in beers" :key="beer.id" @click="selectBeer(beer)">
-            <nuxt-link :to="'/'+beer.id" class="no-underline">
+        <li v-for="beer in listName" :key="beer.id" @click="selectBeer(beer)" >
+            <nuxt-link :to="'/'+beer.id" class="no-underline text-black">
             {{beer.name}}
             </nuxt-link>
         </li>
@@ -16,12 +16,13 @@
 </template>
 <script>
 import axios from "axios";
+import VueLodash from 'vue-lodash'
 export default {
-  props: ["beers"],
+  props: ["beers","listName"],
   data() {
     return {
       textSearch: "",
-      listName: []
+
     };
   },
   methods: {
@@ -32,18 +33,24 @@ export default {
       axios
         .get("https://api.punkapi.com/v2/beers?beer_name=" + this.textSearch)
         .then(response => {
-          this.beers = response.data;
-          if (this.beers.length === 0) {
-            document.getElementById("error").innerHTML = "No Results Found";
-          } else {
-            document.getElementById("error").innerHTML = " ";
+          this.listName = response.data;
+          if (this.listName.length == 0) {
+            this.listName = this.beers;
           }
         });
     }
+  },
+  watch:{
+    textSearch: "search"
   }
 };
 </script>
-<style scoped>
+<style scoped> 
+*{
+  color: #F4F6E7;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
 .search_bar {
     position: fixed;
     z-index: 9999;
@@ -54,19 +61,20 @@ export default {
     margin-top: 70px;
 }
 #search {
-  width: 300px;
-  height: 50px;
-  border: 3px solid black;
-  border-radius: 25px;
+  width: 250px;
+  height: 40px;
+  border: 3px solid #89806E;
+  transition: 0.1s;
   padding: 3%;
   margin-bottom: 5%;
+  color:  #382611;
 }
 #search:focus {
     transform: scale(1.1);
-    border: 5px solid black;
+    border: 5px solid #89806E;
 }
 #search:hover {
-    border: 5px solid black;
+    border: 5px solid #89806E;
 }
 ul {
   position: relative;
@@ -75,26 +83,29 @@ ul {
 li {
   list-style-type: none;
   text-decoration: none;
-  line-height: 1.8;
+  line-height: 2.5;
   margin-left: -10%;
   margin-top: 3% ;
+  transition: 1s;
+  text-transform: uppercase;
+  font-size: 70%;
+  z-index: 9999;
 }
 li:hover {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  transform: scale(1.3);
+  
+  transform: scale(1.0);
   padding-left: 10%;
   font-size: 100%;
-  z-index: 2;
+  z-index: 9999;
 }
 li:active {
   color: #a5a0a0;
 }
 .list_card {
-  
+  background-color: #382611;
   padding-right: 5%;
+  overflow-y: auto;
   height: 100vh;
-  overflow-y: scroll;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -102,15 +113,15 @@ li:active {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
+    box-shadow: inset 0 0 5px  #F4F6E7; 
+    border-radius: 0px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #E0E2E4; 
-    border-radius: 10px;
-    height: 10px;
+    background:  #F4F6E7; 
+    border-radius: 0px;
+    height: 0px;
 }
 
 /* Handle on hover */
