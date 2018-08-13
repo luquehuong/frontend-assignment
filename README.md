@@ -1,6 +1,11 @@
 # assignment-2
 
 > My wonderful Nuxt.js project
+ 
+
+Submitted by: **{{hiepndd}}**
+
+Time spent: **{{48}}** hours spent in total
 
 ## Build Setup
 
