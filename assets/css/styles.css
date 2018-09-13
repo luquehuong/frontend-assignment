@@ -18,11 +18,26 @@ body {
 .banner h1 {font-size: 3em;}
 .banner p {font-size: 16px; padding: 0 70px 0 70px;}
 
-.section-getstart {
-    padding: 100px;
+.getstart-section {
+    padding: 100px 540px 100px 540px;
     text-align: center;
     background-color: #ff5900;
     color: white;
+}
+
+.download-section {
+    padding: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.basic-section {
+    padding: 100px 540px 100px 540px;
+    text-align: center;
+    background-color: white;
+    color: black;
 }
 
 #cover-img {
