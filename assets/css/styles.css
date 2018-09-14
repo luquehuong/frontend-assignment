@@ -90,17 +90,14 @@ body {
 
 .row {
     display: flex;
-    padding: 0;
 }
 
 /* Create three equal columns that sits next to each other */
 .column {
     flex-basis: calc(100% / 3);
-    padding: 0;
 }
 
 .column img {
-    margin-top: 0;
     vertical-align: middle;
     width: 100%;
 }
