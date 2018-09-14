@@ -1,6 +1,7 @@
 body { 
     font-family: "Open Sans", sans-serif, Arial;
     font-size: 16px;
+    margin: 0;
 }
 
 .color-style {
@@ -30,10 +31,16 @@ body {
     text-align: center;
     background-color: black;
     color: white;
-    font-weight: 600;
 }
 
-.basic-section {
+.service-section {
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+#footer {
     padding: 100px 540px 100px 540px;
     text-align: center;
     background-color: white;
@@ -123,3 +130,14 @@ body {
         max-width: 100%;
     }
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container > div {
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+  }
