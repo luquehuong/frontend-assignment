@@ -4,31 +4,40 @@ body {
     margin: 0;
 }
 
-.color-style {
-    color: #ff5900
-}
-
+/* Banner */
 .banner {
     position: relative;
     padding: 250px 500px 250px 500px;
-    background-image: url("../media/cover.jpg");
+    background-image: url("../media/banner.jpg");
+    background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
     color: white;
 }
 
 .banner h1 {font-size: 3em;}
-.banner p {font-size: 16px; padding: 0 70px 0 70px;}
-.getstart-section {
-    padding: 100px 540px 100px 540px;
+
+.banner p {padding: 0 70px 0 70px;}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-text-flex-container {
+    width: 100%;
     text-align: center;
-    background-color: #ff5900;
-    color: white;
+}
+
+/* Header: include logo and navbar */
+.header-container {
+    position: relative;
+    padding: 0;
 }
 
 .header {
-    padding: 10px 400px;
     position: absolute;
+    padding: 10px 400px;
     top: 0;
     left: 15%;
     right: 15%;
@@ -36,7 +45,7 @@ body {
 
 .logo {
     position: absolute;
-    top: 20px;
+    top: 10%;
     left: 0;
     display: inline-block;
     text-decoration: none;
@@ -46,17 +55,16 @@ body {
 .logo a {
     text-decoration: none;
     color: white;
-    font-size: 20;
+    font-size: 20px;
     padding: 14px;
 }
 
 .top-nav {
     position: absolute;
-    top: 20px;
+    top: 10%;
     right: 0;
     color: white;
     text-align: center;
-
 }
 
 .top-nav a {
@@ -64,6 +72,23 @@ body {
     text-decoration: none;
     color: white;
     padding: 14px;
+}
+
+.top-nav li {float: right;}
+.top-nav ul {list-style-type: none;}
+
+/* Sections of the website */
+.getstart-section-flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: #ff5900;
+}
+
+.getstart-section {
+    margin: 100px;
+    width: 50%;
+    text-align: center;
+    color: white;
 }
 
 .download-section {
@@ -80,31 +105,11 @@ body {
     color: black;
 }
 
-#footer {
-    padding: 100px 540px 100px 540px;
-    text-align: center;
-    background-color: white;
-    color: black;
-}
-
-#cover-img {
-    width: 100%;
-    height: 650px;
-}
-
-#banner {
-    background-image: url(../media/cover.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    text-align: center;
-    position: relative;
-}
-
+/* Buttons */
 .button {
     border: none;
     border-radius: 30px;
-    padding: 15px 30px 15px 30px;
+    padding: 15px 30px;
     text-align: center;
     font-weight: 600;
     text-decoration: none;
@@ -123,6 +128,7 @@ body {
     color: black;
 }
 
+/* Icons */
 .icon-gallery {
     display: inline-block;
     margin: 5px;
@@ -130,11 +136,18 @@ body {
     width: 180px;
 }
 
-.desc {
-    padding: 15px;
-    text-align: center;
+.icon-flex-container {
+    display: flex;
+    justify-content: center;
 }
 
+.icon-flex-container div {
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+  }
+
+/* Row and column for image section */
 .row {
     display: flex;
 }
@@ -155,7 +168,7 @@ body {
     background-size: cover;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout for image section - makes a two column-layout instead of four columns when resize windows*/
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
@@ -163,7 +176,7 @@ body {
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout for image section - makes the two columns stack on top of each other instead of next to each other when resize windows*/
 @media screen and (max-width: 600px) {
     .column {
         flex: 100%;
@@ -171,38 +184,10 @@ body {
     }
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-}
-
-.flex-container > div {
-    width: 220px;
-    margin: 10px;
+/* Footer */
+#footer {
+    padding: 100px 540px 100px 540px;
     text-align: center;
-  }
-
-.container {
-    position: relative;
-    padding: 0;
-}
-
-.center {
-    position: absolute;
-    color: white;
-    left: 500px;
-    right: 500px;
-    top: 35%;
-    text-align: center;
-}
-
-.center h1 {font-size: 3em;}
-.center p {font-size: 16px; padding: 0 70px 0 70px;}
-
-.cover-img { 
-    width: 100%;
-    height: auto;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: white;
+    color: black;
 }
