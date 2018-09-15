@@ -9,21 +9,32 @@ body {
 }
 
 .banner {
+    position: relative;
     padding: 250px 500px 250px 500px;
-    text-align: center;
     background-image: url("../media/cover.jpg");
+    text-align: center;
     background-repeat: no-repeat;
     color: white;
 }
 
 .banner h1 {font-size: 3em;}
 .banner p {font-size: 16px; padding: 0 70px 0 70px;}
-
 .getstart-section {
     padding: 100px 540px 100px 540px;
     text-align: center;
     background-color: #ff5900;
     color: white;
+}
+
+.header {
+    padding: 10px 400px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    font-size: 20;
 }
 
 .download-section {
@@ -141,3 +152,28 @@ body {
     margin: 10px;
     text-align: center;
   }
+
+.container {
+    position: relative;
+    padding: 0;
+}
+
+.center {
+    position: absolute;
+    color: white;
+    left: 500px;
+    right: 500px;
+    top: 35%;
+    text-align: center;
+}
+
+.center h1 {font-size: 3em;}
+.center p {font-size: 16px; padding: 0 70px 0 70px;}
+
+.cover-img { 
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
