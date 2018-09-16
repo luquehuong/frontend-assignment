@@ -1,193 +1,193 @@
-body { 
-    font-family: "Open Sans", sans-serif, Arial;
-    font-size: 16px;
-    margin: 0;
-}
-
+    body { 
+        font-family: "Open Sans", sans-serif, Arial;
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
 /* Banner */
-.banner {
-    position: relative;
-    padding: 250px 500px 250px 500px;
-    background-image: url("../media/banner.jpg");
-    background-size: cover;
-    text-align: center;
-    background-repeat: no-repeat;
-    color: white;
-}
+    .banner {
+        widows: 100%;
+        padding: 20%;
+        text-align: center;
+        background-repeat: no-repeat;
+        color: white;
+    }
 
-.banner h1 {font-size: 3em;}
+    .banner h1 {font-size: 3em;}
 
-.banner p {padding: 0 70px 0 70px;}
+    .banner p {padding: 0 70px 0 70px;}
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-}
+    .background-img {
+        width: 100%;
+        background-image: url("../media/banner.jpg");   
+        background-position: center;
+        background-size: cover;
+    }
 
-.banner-text-flex-container {
-    width: 100%;
-    text-align: center;
-}
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-text {
+        width: 100%;
+        text-align: center;
+    }
 
 /* Header: include logo and navbar */
-.header-container {
-    position: relative;
-    padding: 0;
-}
+    .header-container {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
 
-.header {
-    position: absolute;
-    padding: 10px 400px;
-    top: 0;
-    left: 15%;
-    right: 15%;
-}
+    .header {
+        position: absolute;
+        padding: 0.5% 0;
+        top: 0;
+        left: 10%;
+        right: 10%;
+    }
 
-.logo {
-    position: absolute;
-    top: 10%;
-    left: 0;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-}
+    .logo {
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+    }
 
-.logo a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 14px;
-}
+    .logo a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
 
-.top-nav {
-    position: absolute;
-    top: 10%;
-    right: 0;
-    color: white;
-    text-align: center;
-}
+    .logo ul {list-style-type: none;}
+    .logo li {float: left;}
 
-.top-nav a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 14px;
-}
+    .top-nav {
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        color: white;
+        text-align: center;
+    }
 
-.top-nav li {float: right;}
-.top-nav ul {list-style-type: none;}
+    .top-nav a {
+        text-decoration: none;
+        color: white;
+        padding: 0 1em;
+        font-size: 14px;
+    }
+
+    .top-nav ul {list-style-type: none;}
+    .top-nav li {float: right;}
 
 /* Sections of the website */
-.getstart-section-flex-container {
-    display: flex;
-    justify-content: center;
-    background-color: #ff5900;
-}
+    /* Get Start Section */
+        .getstart-section-flex-container {
+            display: flex;
+            justify-content: center;
+            background-color: #ff5900;
+        }
 
-.getstart-section {
-    margin: 100px;
-    width: 50%;
-    text-align: center;
-    color: white;
-}
+        .getstart-section {
+            margin: 5%;
+            width: 60%;
+            text-align: center;
+            color: white;
+        }
+    
+    /* Download Section */
+        .download-section-flex-container {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
 
-.download-section {
-    padding: 100px;
-    text-align: center;
-    background-color: black;
-    color: white;
-}
+        .download-section {
+            padding: 5%;
+            text-align: center;
+            color: white;
+        }
 
-.service-section {
-    padding: 100px;
-    text-align: center;
-    background-color: white;
-    color: black;
-}
+    /* Service Section */
+        .service-section {
+            padding: 5%;
+            text-align: center;
+            background-color: white;
+            color: black;
+        }
 
 /* Buttons */
-.button {
-    border: none;
-    border-radius: 30px;
-    padding: 15px 30px;
-    text-align: center;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+    .button {
+        border: none;
+        border-radius: 30px;
+        padding: 15px 30px;
+        text-align: center;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
 
-.button1 {
-    background-color: #ff5900;
-    color: white;
-}
-.button2 {
-    background-color: white;
-    color: black;
-}
+    .button1 {
+        background-color: #ff5900;
+        color: white;
+    }
+    .button2 {
+        background-color: white;
+        color: black;
+    }
 
 /* Icons */
-.icon-gallery {
-    display: inline-block;
-    margin: 5px;
-    border: none;
-    width: 180px;
-}
-
-.icon-flex-container {
-    display: flex;
-    justify-content: center;
-}
-
-.icon-flex-container div {
-    width: 220px;
-    margin: 10px;
-    text-align: center;
-  }
-
-/* Row and column for image section */
-.row {
-    display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-    flex-basis: calc(100% / 3);
-}
-
-.column img {
-    vertical-align: middle;
-    width: 100%;
-}
-
-.img-gallery {
-    height: 16.6667vw;
-    background-position: center;
-    background-size: cover;
-}
-
-/* Responsive layout for image section - makes a two column-layout instead of four columns when resize windows*/
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
+    .icon-flex-container {
+        display: flex;
+        justify-content: center;
     }
-}
 
-/* Responsive layout for image section - makes the two columns stack on top of each other instead of next to each other when resize windows*/
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
+    .icon-flex-container div {
+        width: 220px;
+        margin: 10px;
+        text-align: center;
     }
-}
+
+/* Images Section */
+    /* Row and column for image section */
+        .row {
+            display: flex;
+        }
+
+    /* Create three equal columns that sits next to each other */
+        .column {
+            flex-basis: calc(100% / 3);
+        }
+
+        .img-gallery {
+            height: 16.6667vw;
+            background-position: center;
+            background-size: cover;
+        }
 
 /* Footer */
-#footer {
-    padding: 100px 540px 100px 540px;
-    text-align: center;
-    background-color: white;
-    color: black;
-}
+    .footer-flex-container {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .footer {
+        padding: 5%;
+        width: 60%;
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
