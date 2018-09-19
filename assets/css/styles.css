@@ -227,7 +227,7 @@ body {
             margin-top: 1.5rem;
         }
 
-        @media screen and (min-width: 601px) and (max-width: 800px) {
+        @media screen and (min-width: 601px) and (max-width: 850px) {
             .getstart-section {
                 margin: 3rem;
                 width: 30rem;
@@ -274,7 +274,7 @@ body {
             font-size: 22px;
         }
 
-        @media screen and (min-width: 601px) and (max-width: 800px) {
+        @media screen and (min-width: 601px) and (max-width: 850px) {
             .download-section {
                 padding: 3rem;
             }
@@ -312,7 +312,7 @@ body {
             color: #ff5900;
         }
 
-        @media screen and (min-width: 601px) and (max-width: 800px) {
+        @media screen and (min-width: 601px) and (max-width: 850px) {
             .service-section {
                 padding: 3rem;
             }
@@ -359,7 +359,7 @@ body {
         color: black;
     }
 
-    @media screen and (min-width: 601px) and (max-width: 800px) {
+    @media screen and (min-width: 601px) and (max-width: 850px) {
         .button {
             border-radius: 1em;
             padding: 0.75rem 1.5em;
@@ -400,7 +400,7 @@ body {
         font-size: 14px;
     }
 
-    @media screen and (min-width: 601px) and (max-width: 800px) {
+    @media screen and (min-width: 601px) and (max-width: 850px) {
         .icon-flex-container div {
             width: 9rem;
         }
