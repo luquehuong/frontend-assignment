@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url(tailwind.css);
     
     body { 
         font-family: "Open Sans", sans-serif, Arial;
@@ -8,6 +9,18 @@
     
     * {
         box-sizing: border-box;
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 800px) {
+        body {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        body {
+            font-size: 10px;
+        }
     }
     
 /* Banner */
@@ -27,7 +40,10 @@
         color: #ff5900;
     }
 
-    .banner p {padding: 0 4rem;}
+    .banner p {
+        padding: 0 4rem;
+        margin-top: 1rem;
+    }
 
     .background-img {
         width: 100%;
@@ -44,6 +60,46 @@
     .banner-text {
         width: 100vw;
         text-align: center;
+    }
+
+    @media screen and (min-width: 851px) and (max-width: 1000px) {
+        .banner {
+            padding: 10rem 12rem;
+        }
+    
+        .banner h1 {font-size: 2rem;}
+    
+        .banner p {
+            padding: 0 3rem;
+            margin-top: 2rem;
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 850px) {
+        .banner {
+            padding: 7rem 10rem;
+        }
+    
+        .banner h1 {font-size: 1.75rem;}
+    
+        .banner p {
+            padding: 0 2rem;
+            margin-top: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .banner {
+            padding: 5rem 2rem;
+        }
+    
+        .banner h1 {font-size: 1.5rem;}
+    
+        .banner p {
+            padding: 0 1rem;
+            margin-top: 0.75rem;
+        }
     }
 
 /* Header: include logo and navbar */
@@ -65,7 +121,6 @@
     .logo {
         position: absolute;
         left: 0;
-        margin-top: 1rem;
         display: inline-block;
         color: white;
         text-align: center;
@@ -95,6 +150,63 @@
     .top-nav ul {list-style-type: none;}
     .top-nav li {float: right;}
 
+    @media screen and (min-width: 851px) and (max-width: 1000px) {
+        .header {
+            position: absolute;
+            padding: 0.5rem;
+            top: 0;
+            left: 5rem;
+            right: 5rem;
+        }
+    
+        .logo a {
+            font-size: 16px;
+        }
+    
+        .top-nav a {
+            font-size: 13px;
+            padding: 0 1em;
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 850px) {
+        .header {
+            position: absolute;
+            padding: 0.5rem 0;
+            top: 0;
+            left: 4rem;
+            right: 4rem;
+        }
+    
+        .logo a {
+            font-size: 14px;
+        }
+    
+        .top-nav a {
+            font-size: 12px;
+            padding: 0 0.75em;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .header {
+            position: absolute;
+            padding: 0.25rem 0;
+            top: 0;
+            left: 2rem;
+            right: 2rem;
+        }
+    
+        .logo a {
+            font-size: 9px;
+        }
+    
+        .top-nav a {
+            font-size: 8px;
+            padding: 0 0.5em;
+        }
+    }
+
 /* Sections of the website */
     /* Get Start Section */
         .getstart-section-flex-container {
@@ -119,6 +231,44 @@
             white-space: pre;
             color: white;
         }
+
+        .getstart-section p:nth-child(2) {
+            margin-top: 1.5rem;
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 800px) {
+            .getstart-section {
+                margin: 3rem;
+                width: 30rem;
+                text-align: center;
+                color: white;
+            }
+    
+            .getstart-section p:first-child {
+                font-size: 25px;
+            }  
+            
+            .getstart-section p:nth-child(2) {
+                margin-top: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .getstart-section {
+                margin: 2rem;
+                width: 20rem;
+                text-align: center;
+                color: white;
+            }
+    
+            .getstart-section p:first-child {
+                font-size: 20px;
+            }  
+            
+            .getstart-section p:nth-child(2) {
+                margin-top: 0.75rem;
+            }
+        }
     
     /* Download Section */
         .download-section-flex-container {
@@ -133,12 +283,32 @@
             color: white;
         }
 
-        .download-section p:first-child {
+        .download-section p {
             font-size: 22px;
         }
 
-        .download-section div:nth-child(2) {
-            font-size: 16px;
+        @media screen and (min-width: 601px) and (max-width: 800px) {
+            .download-section {
+                padding: 3rem;
+                text-align: center;
+                color: white;
+            }
+            
+            .download-section p {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .download-section {
+                padding: 2rem;
+                text-align: center;
+                color: white;
+            }
+            
+            .download-section p {
+                font-size: 18px;
+            }
         }
 
     /* Service Section */
@@ -159,6 +329,30 @@
             color: #ff5900;
         }
 
+        @media screen and (min-width: 601px) and (max-width: 800px) {
+            .service-section {
+                padding: 3rem;
+            }
+    
+            .service-section p:first-child {
+                font-size: 18px;
+            }
+    
+            .service-section p:first-child::after {
+                content: "\A ___";
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .service-section {
+                padding: 2rem;
+            }
+    
+            .service-section p:first-child {
+                font-size: 16px;
+            }
+        }
+
 /* Buttons */
     .button {
         border: none;
@@ -169,7 +363,7 @@
         text-decoration: none;
         display: inline-block;
         font-size: 13px;
-        margin: 4px 2px;
+        margin-top: 2rem;
         cursor: pointer;
     }
 
@@ -182,6 +376,27 @@
         color: black;
     }
 
+    @media screen and (min-width: 601px) and (max-width: 800px) {
+        .button {
+            border-radius: 1em;
+            padding: 0.75rem 1.5em;
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            margin-top: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .button {
+            border-radius: 1em;
+            padding: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 8px;
+            margin-top: 1em;
+        }
+    }
 /* Icons */
     .icon-flex-container {
         display: flex;
@@ -207,6 +422,50 @@
         font-size: 14px;
     }
 
+    @media screen and (min-width: 601px) and (max-width: 800px) {
+        .icon-flex-container div {
+            width: 9rem;
+        }
+    
+        .icon-flex-container div i {
+            font-size: 30px;
+            padding: 0.5rem;
+        }
+    
+        .icon-flex-container div p:nth-child(2) {
+            font-size: 16px;
+            margin-bottom: 0.25rem;
+        }
+    
+        .icon-flex-container div p:nth-child(3) {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .icon-flex-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .icon-flex-container div {
+            width: 5rem;
+        }
+    
+        .icon-flex-container div i {
+            font-size: 23px;
+            padding: 0.5rem;
+        }
+    
+        .icon-flex-container div p:nth-child(2) {
+            font-size: 14px;
+            margin-bottom: 0.25rem;
+        }
+    
+        .icon-flex-container div p:nth-child(3) {
+            font-size: 9px;
+        }
+    }
 /* Images Section */
     /* Row and column for image section */
         .row {
@@ -214,14 +473,36 @@
         }
 
     /* Create three equal columns that sits next to each other */
-        .column {
-            flex-basis: calc(100% / 3);
+        @media screen and (max-width: 1680px) {
+            .column {
+                flex-basis: calc(100% / 3);
+            }
+
+            .img-gallery {
+                height: calc(100vw / 6);
+                background-position: center;
+                background-size: cover;
+            }
         }
 
-        .img-gallery {
-            height: calc(100vw / 6);
-            background-position: center;
-            background-size: cover;
+    /* Responsive layout for image section - makes a two column-layout instead of four columns when resize windows*/
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+                max-width: 50%;
+            }
+        }
+
+    /* Responsive layout for image section - makes the two columns stack on top of each other instead of next to each other when resize windows*/
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+                max-width: 100%;
+            }
         }
 
 /* Footer */
@@ -267,4 +548,60 @@
 
     .footer-icon-flex-container div p {
         font-size: 16px;
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 800px) {
+        .footer {
+            padding: 3rem;
+            width: 50rem;
+        }
+    
+        .footer p:first-child {
+            font-size: 20px;
+        }
+
+        .footer p:nth-child(2) {
+            margin-top: 1rem;
+        }
+    
+        .footer-icon-flex-container div {
+            width: 10rem;
+        }
+    
+        .footer-icon-flex-container div i {
+            font-size:30px;
+            margin-top: 0.5rem;
+        }
+    
+        .footer-icon-flex-container div p {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .footer {
+            padding: 2rem;
+            width: 30rem;
+        }
+    
+        .footer p:first-child {
+            font-size: 18px;
+        }
+
+        .footer p:nth-child(2) {
+            margin-top: 1rem;
+        }
+    
+        .footer-icon-flex-container div {
+            width: 7rem;
+        }
+    
+        .footer-icon-flex-container div i {
+            font-size: 20px;
+            margin-top: 0.5rem;
+        }
+    
+        .footer-icon-flex-container div p {
+            font-size: 8px;
+        }
     }
