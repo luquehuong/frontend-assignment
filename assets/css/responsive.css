@@ -22,14 +22,56 @@
     font-size: 20px;
     color: white;
     float: left;
+    display: block;
 }
 
 .top-nav {
     display: inline-block;
-    text-align: right;
+    text-align: left;
 }
 
 .top-nav a {
     text-decoration: none;
     font-size: 14px;
+}
+
+.banner h1::after { 
+    content: "\A __";
+    white-space: pre;
+    color: #ff5900;
+}
+
+.button {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.button-sm {
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 1em;
+    padding: 0.5rem;
+    margin-top: 1em;
+}
+
+.button1 {
+    background-color: #ff5900;
+    color: white;
+}
+.button2 {
+    background-color: white;
+    color: black;
 }
