@@ -1,0 +1,35 @@
+:root {
+    --gutter: 2rem;
+}
+.row {
+    margin-left: calc(-var(--gutter) / 2);
+    margin-right: calc(-var(--gutter) / 2);
+}
+
+.banner {
+    width: 100%;
+}
+
+.background-img {
+    width: 100%;
+    background-image: url("../media/banner.jpg");   
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    float: left;
+}
+
+.top-nav {
+    display: inline-block;
+    text-align: right;
+}
+
+.top-nav a {
+    text-decoration: none;
+    font-size: 14px;
+}
