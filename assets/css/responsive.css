@@ -75,3 +75,26 @@
     background-color: white;
     color: black;
 }
+
+.backgroud-red-orange {
+    background-color: #ff5900;
+}
+
+.getstart-section {
+    text-align: center;
+    color: white;
+}
+
+.getstart-section p:first-child {
+    font-size: 30px;
+}
+
+.getstart-section p:first-child::after {
+    content: "\A ___";
+    white-space: pre;
+    color: white;
+}
+
+.getstart-section p:nth-child(2) {
+    margin-top: 1.5rem;
+}
