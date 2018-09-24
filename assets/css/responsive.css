@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+body {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif, Arial;
+    font-size: 16px;
+  }
+
 :root {
     --gutter: 2rem;
 }
@@ -6,42 +13,49 @@
     margin-right: calc(-var(--gutter) / 2);
 }
 
-.banner {
-    width: 100%;
+.column {
+    padding-left: calc(-var(--gutter) / 2);
+    padding-right: calc(-var(--gutter) / 2);
 }
 
-.background-img {
-    width: 100%;
-    background-image: url("../media/banner.jpg");   
-    background-position: center;
-    background-size: cover;
-}
+/* Banner */
+    .banner {
+        width: 100%;
+    }
 
-.logo {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    float: left;
-    display: block;
-}
+    .background-img {
+        width: 100%;
+        background-image: url("../media/banner.jpg");   
+        background-position: center;
+        background-size: cover;
+    }
 
-.top-nav {
-    display: inline-block;
-    text-align: left;
-}
+    .logo {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        float: left;
+        display: block;
+    }
 
-.top-nav a {
-    text-decoration: none;
-    font-size: 14px;
-}
+    .top-nav {
+        display: inline-block;
+        text-align: left;
+    }
 
-.banner h1::after { 
-    content: "\A __";
-    white-space: pre;
-    color: #ff5900;
-}
+    .top-nav a {
+        text-decoration: none;
+        font-size: 14px;
+    }
 
-.button {
+    .banner h1::after { 
+        content: "\A __";
+        white-space: pre;
+        color: #ff5900;
+    }
+
+/* Button */
+    .button {
     border: none;
     border-radius: 2rem;
     padding: 1rem 2rem;
@@ -52,49 +66,287 @@
     font-size: 13px;
     margin-top: 2rem;
     cursor: pointer;
-}
+    }
+    
+    .button1 {
+        background-color: #ff5900;
+        color: white;
+    }
+    .button2 {
+        background-color: white;
+        color: black;
+    }
 
-.button-sm {
-    border: none;
-    text-align: center;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
-    cursor: pointer;
-    border-radius: 1em;
-    padding: 0.5rem;
-    margin-top: 1em;
-}
+    @media screen and (max-width: 767px){
+        .button {
+            border: none;
+            text-align: center;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 1em;
+            padding: 0.5rem;
+            margin-top: 1em;
+        }
+    }
 
-.button1 {
-    background-color: #ff5900;
-    color: white;
-}
-.button2 {
-    background-color: white;
-    color: black;
-}
+/* Get Start Section */
+    .getstart-section {
+        text-align: center;
+        color: white;
+    }
 
-.backgroud-red-orange {
-    background-color: #ff5900;
-}
+    .backgroud-red-orange {
+        background-color: #ff5900;
+    }
 
-.getstart-section {
-    text-align: center;
-    color: white;
-}
+    .getstart-section p:first-child {
+        font-size: 30px;
+    }
 
-.getstart-section p:first-child {
-    font-size: 30px;
-}
+    .getstart-section p:first-child::after {
+        content: "\A ___";
+        white-space: pre;
+        color: white;
+    }
 
-.getstart-section p:first-child::after {
-    content: "\A ___";
-    white-space: pre;
-    color: white;
-}
+    .getstart-section p:nth-child(2) {
+        margin-top: 1.5rem;
+    }
 
-.getstart-section p:nth-child(2) {
-    margin-top: 1.5rem;
-}
+    @media screen and (max-width: 767px){
+        .getstart-section p:first-child {
+            font-size: 25px;
+        }
+
+        .getstart-section p:nth-child(2) {
+            font-size: 14px;
+        }
+    }
+
+/* Service Section */
+    .service-section-p {
+        text-align: center;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+    }
+
+    .service-section-p p::after {
+        content: "\A ____";
+        white-space: pre;
+        color: #ff5900;
+    }
+
+/* Icon */
+    .icon {
+        display: inline-block;
+        margin: 1rem;
+        justify-content: center;
+    }
+
+    .icon i {
+        font-size:40px;
+        color:#ff5900;
+    }
+
+    .icon p:nth-child(2) {
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+
+    .icon p:nth-child(3) {
+        font-size: 14px;
+        margin-top: 0.5rem;
+    }
+
+    @media screen and (max-width: 991px){ 
+        .icon {
+            display: inline-block;
+            margin: 1rem;
+            justify-content: center;
+            }
+
+        .icon i {
+            font-size:35px;
+            color:#ff5900;
+        }
+
+        .icon p:nth-child(2) {
+            font-size: 16px;
+            margin-top: 0.25rem;
+        }
+
+        .icon-sm p:nth-child(3) {
+            font-size: 12px;
+            margin-top: 0.25rem;
+        }
+    }
+
+    @media screen and (max-width: 767px){ 
+        .icon {
+            display: inline-block;
+            margin: 1rem 0.25rem;
+            justify-content: center;
+            }
+
+        .icon i {
+            font-size:25px;
+            color:#ff5900;
+        }
+
+        .icon p:nth-child(2) {
+            font-size: 16px;
+            margin-top: 0.25rem;
+        }
+
+        .icon-sm p:nth-child(3) {
+            font-size: 12px;
+            margin-top: 0.25rem;
+        }
+    }
+
+/* Download Section */
+    .download-section-container {
+        justify-content: center;
+        background-color: black;
+    }
+
+    .download-section {
+        text-align: center;
+        color: white;
+    }
+
+    .download-section p {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 991px) {
+        .download-section {
+            text-align: center;
+        }
+        
+        .download-section p {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .download-section {
+            text-align: center;
+        }
+        
+        .download-section p {
+            font-size: 18px;
+        }
+    }
+
+/* Image section */
+    .img-gallery {
+        width: calc(100vw / 3);
+        height: calc(100vw / 6);
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 991px) {
+        .img-gallery {
+            width: calc(100vw / 3);
+            height: calc(100vw / 4);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .img-gallery {
+            width: calc(100vw);
+            height: calc(100vw / 2);
+        }
+    }
+
+/* Footer */
+    .footer-container {
+        justify-content: center;
+        background-color: white;
+        margin: 5rem;
+    }
+
+    .footer {
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+
+    .footer p:first-child {
+        font-size: 25px;
+        margin: 1rem 0;
+    }
+
+    .footer p:first-child::after {
+        content: "\A ___";
+        white-space: pre;
+        color: #ff5900;
+    }
+
+    .footer-icon-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-icon-container div {
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    .footer-icon-container div i {
+        font-size:40px;
+        color:black;
+    }
+
+    .footer-icon-container div p {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 991px) {
+        .footer p:first-child {
+            font-size: 20px;
+        }
+
+        .footer p:nth-child(2) {
+            margin-top: 1rem;
+        }
+
+        .footer-icon-container div i {
+            font-size:30px;
+            margin-top: 0.5rem;
+        }
+
+        .footer-icon-container div p {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .footer p:first-child {
+            font-size: 18px;
+        }
+
+        .footer p:nth-child(2) {
+            margin-top: 1rem;
+            font-size: 14px;
+        }
+
+        .footer-icon-container div {
+            display: flex-wrap;
+        }
+
+        .footer-icon-container div i {
+            font-size: 20px;
+            margin-top: 0.5rem;
+        }
+
+        .footer-icon-container div p {
+            font-size: 10px;
+        }
+    }
