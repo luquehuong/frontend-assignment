@@ -165,7 +165,7 @@ body {
     @media screen and (max-width: 991px){ 
         .icon {
             display: inline-block;
-            margin: 1rem;
+            margin: 1rem 2.5rem;
             justify-content: center;
             }
 
@@ -269,7 +269,6 @@ body {
     .footer-container {
         justify-content: center;
         background-color: white;
-        margin: 5rem;
     }
 
     .footer {
